@@ -1,49 +1,65 @@
-<!DOCTYPE html>
-<html lang="kr-KR">
+<!doctype html>
+<html lang="ko-KR">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>하이퍼링크 | Likelion Bootcamp</title>
+  <title>하이퍼 링크 | Likelion Bootcamp</title>
 </head>
 
 <body>
   <a href="/index.html">Index로 이동</a>
+  <a href="/index.html">Index로 이동</a><br />
+  <a href="#card-2">2번 카드로 이동</a>
   <hr />
-  <h1>하이퍼링크</h1>
+  <h1>하이퍼 링크</h1>
   <h2>UI 실습</h2>
+  <div>
+    <div class="card" id="card-1">
+      <figure>
+        <img src="/src/assets/thumbnail/meeting-room.jpg" alt="" />
+        <figcaption>
+          <p>RESPONSIVE WEB<br />DESIGN STRATEGIES</p>
+          <p>반응형 웹디자인 전략</p>
+        </figcaption>
+      </figure>
+      <a title="멋쟁이 사자처럼 인기과정" href="https://bootcamp.likelion.net/school/kdt-frontend-17th" target="_blank"
+        rel="noopener noreferrer">강의정보</a>
+    </div>
+    <div class="card" id="card-2">
+      <figure>
+        <img width="600" src="/src/assets/thumbnail/peaktime.jpeg" alt="" />
+        <figcaption>
+          <p>RESPONSIVE WEB<br />DESIGN STRATEGIES</p>
+          <p>반응형 웹디자인 전략</p>
+        </figcaption>
+      </figure>
+      <a title="멋쟁이 사자처럼 인기과정" href="https://bootcamp.likelion.net/school/kdt-frontend-17th" target="_blank"
+        rel="noopener noreferrer">강의정보</a><br />
+      <a href="#top">맨위로</a>
+    </div>
+    <hr />
+    <h2>텍스트 링크</h2>
+    <p><a href="https://bootcamp.likelion.net/">멋쟁이 사자처럼</a> 프론트엔드 부트캠프 16기 시작!</p>
+    <p><a href="https://github.com/" title="Github로 이동합니다." target="_blank" rel="noopener noreferrer">Github</a></p>
+    <p><a href="https://www.naver.com/" title="네이버로 이동합니다." target="likelion" rel="noopener noreferrer">네이버</a></p>
+    <p><a href="https://www.daum.net/" title="다음(Daum)으로 이동합니다." target="likelion"
+        rel="noopener noreferrer">다음(Daum)</a></p>
 
-  <figure>
-    <img src="/src/assets/thumbnail/meeting-room.jpg" alt="" />
-    <figcaption>
-      <p>RESPONSIVE WEB<br />DESIGN STRATEGIES</p>
-      <p>반응형 웹디자인 전략</p>
-    </figcaption>
-    <a href="https://bootcamp.likelion.net/school/kdt-frontend-17th" target="_blank" rel="noopener noreferrer">강의정보</a>
-  </figure>
+    <h2>PDF 파일 링크</h2>
+    <p><a href="/src/assets/pdf/google-seo-guide-ko.pdf" download>구글 SEO 가이드</a></p>
 
-  <h2>텍스트 링크</h2>
-  <p><a href="https://bootcamp.likelion.net/">멋쟁이 사자처럼</a> 프론트엔드 부트캠프 16기 시작!</p>
-  <p><a href="https://github.com/" title="Github로 이동합니다." target="_blank" rel="noopener noreferrer">Github</a></p>
-  <p><a href="https://www.naver.com/" title="네이버로 이동합니다." target="likelion" rel="noopener noreferrer">네이버</a></p>
-  <p><a href="https://www.daum.net/" title="다음(Daum)으로 이동합니다." target="likelion" rel="noopener noreferrer">다음(Daum)</a>
-  </p>
+    <h2>이메일 링크</h2>
+    <p><a href="mailto:seulbinim@gmail.com?subject=문의사항">슬비쌤 이메일</a></p>
 
-  <h2>PDF 파일 링크</h2>
-  <p><a href="/src/assets/pdf/google-seo-guide-ko.pdf" download>구글 SEO 가이드</a></p>
-
-  <h2>이메일 링크</h2>
-  <p><a href="mailto:seulbinim@gmail.com?subject=문의사항">슬비쌤 이메일</a></p>
-
-  <h2>전화번호 링크</h2>
-  <p>고객센터 <a href="tel:01023456789">010-2345-6789</a></p>
-
-  <h2>이미지 링크</h2>
-  <p>
-    <a href="/src/assets/pdf/wai-aria.pdf" download>
-      <img src="/src/assets/cafew/brochure-@1x.png" alt=" WAI-ARIA 브로슈어" />
-    </a>
-  </p>
+    <h2>전화번호 링크</h2>
+    <p>고객센터 <a href="tel:01023456789">010-2345-6789</a></p>
+    <h2>이미지 링크</h2>
+    <p>
+      <a href="/src/assets/pdf/wai-aria.pdf" download>
+        <img src="/src/assets/cafew/brochure-@1x.png" alt="WAI-ARIA 브로슈어" />
+      </a>
+    </p>
 </body>
 
 </html>
