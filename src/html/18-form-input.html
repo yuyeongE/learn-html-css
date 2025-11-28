@@ -38,7 +38,8 @@
     <!-- 비밀번호 입력 서식 -->
     <div>
       <label for="userPwd">비밀번호</label>
-      <input type="password" id="userPwd" placeholder="최소 8자리 이상" name="password" />
+      <input type="password" pattern="^(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$" id="userPwd" placeholder="최소 8자리 이상"
+        name="password" />
     </div>
     <!-- 이메일 입력 서식 -->
     <div>
@@ -78,11 +79,17 @@
       <label for="js">JavaScript</label>
     </div>
     <!-- 파일 첨부 서식 -->
-    <div><input type="file" /></div>
+    <div><input type="file" value="프로필 선택" /></div>
     <!-- 전송 버튼 -->
     <input type="submit" value="전송" />
     <!-- <button type="submit">제출</button> -->
+    <!--  초기화 버튼 -->
+
+    <!-- 일반 버튼 -->
+    <input type="button" value="Click!" />
   </form>
+  <input form="inputForm" type="reset" value="초기화" />
+
 </body>
 
 </html>
