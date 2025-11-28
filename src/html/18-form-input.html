@@ -28,7 +28,61 @@
       </div>
     </fieldset>
   </form>
+  <hr />
+  <form action="https://formspree.io/f/xeqwwbwk" mrthod="">
+    <!-- 텍스트 입력 서식 -->
+    <div>
+      <label for="userID">이름</label>
+      <input type="text" id="userID" placeholder="예)홍길동" name="name" />
+    </div>
+    <!-- 비밀번호 입력 서식 -->
+    <div>
+      <label for="userPwd">비밀번호</label>
+      <input type="password" id="userPwd" placeholder="최소 8자리 이상" name="password" />
+    </div>
+    <!-- 이메일 입력 서식 -->
+    <div>
+      <label for="userEmail">이메일</label>
+      <input type="email" id="userEmail" required placeholder="예)guest@likelion.net" name="email" />
+    </div>
 
+    <!-- 전화번호 입력 서식 -->
+    <div>
+      <label for="userPhone">전화번호</label>
+      <input type="tel" id="userPhone" placeholder="예)010-0000-0000" name="phone" />
+    </div>
+    <!-- URL 입력 서식 -->
+    <div>
+      <label for="userSns">SNS</label>
+      <input type="url" id="userSns" placeholder="예)https://www.facebook.com/seulbinim" name="sns" />
+    </div>
+    <!-- 검색어 입력 서식 -->
+    <div>
+      <label for="search"></label>
+      <input type="search" id="search" placeholder="검색어 예)멋쟁이 사자처럼" name="search" />
+    </div>
+    <!-- 라디오 입력 서식 -->
+    <div>
+      <input type="radio" id="male" name="gender" value="man" checked />
+      <label for="male">남자</label>
+      <input type="radio" id="female" name="gender" value="woman" />
+      <label for="male">여자</label>
+    </div>
+    <!-- 체크박스 입력 서식 -->
+    <div>
+      <input type="checkbox" id="html" name="frontend" value="마크업" checked />
+      <label for="html">HTML</label>
+      <input type="checkbox" id="css" name="frontend" value="스타일" />
+      <label for="css">CSS</label>
+      <input type="checkbox" id="js" name="frontend" value="스크립트" />
+      <label for="js">JavaScript</label>
+    </div>
+    <!-- 파일 첨부 서식 -->
+    <div><input type="file" /></div>
+    <!-- 전송 버튼 -->
+    <input type="submit" value="전송" />
+    <!-- <button type="submit">제출</button> -->
+  </form>
 </body>
 
 </html>
