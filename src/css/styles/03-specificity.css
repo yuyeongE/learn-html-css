@@ -1,0 +1,12 @@
+/* 상속, 겹침, 우선순위 */
+body {
+  color: green;
+}
+
+p {
+  color: red;
+}
+
+.wrapper {
+  color: blue;
+}
