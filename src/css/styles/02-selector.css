@@ -1,0 +1,81 @@
+/* CSS 선택자 */
+/* 전체 선택자 */
+* {
+  background-color: #fcf;
+}
+
+/* 타입 선택자, 태그 선택자, 요소 선택자 */
+body {
+  background-color: yellow;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* class 선택자 */
+.lion {
+  background-color: salmon;
+}
+
+/* id 선택자 */
+#bootcamp {
+  background-color: green;
+}
+
+/* 속성 선택자 */
+[title^="멋사"] {
+  font-size: 24px;
+}
+
+/* 자손 결합자와 자식 결합자*/
+.frontend .lion {
+  border: 5px solid blue;
+}
+
+.like>.lion {
+  font-size: 36px;
+}
+
+/* 형제 선택자 */
+h2+p {
+  font-weight: 900;
+}
+
+h2~p {
+  color: blue;
+}
+
+/* 가상 요소 선택자 */
+p::first-letter {
+  font-size: 60px;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+h1::before {
+  content: '웹표준-';
+}
+
+h1::after {
+  content: '(멋사)';
+}
+
+/* 가상 클래스 */
+a {
+  font-size: 40px;
+}
+
+a:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+a:focus {
+  background-color: red;
+  color: white;
+}
