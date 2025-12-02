@@ -1,0 +1,61 @@
+/* 타이포그래피 및 단위 */
+/* 글꼴 */
+h1 {
+  font-family: 'SUIT Variable', sans-serif;
+}
+
+.like {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* 굵기 */
+h1 {
+  font-weight: 100;
+}
+
+
+/* 크기} */
+.frontend {
+  font-size: 20px;
+}
+
+.lion {
+  background-color: #ffc;
+  /* em : 부모로부터 상속 받은 값을 기준으로 적용 */
+  /* font-size: 1.5em; */
+  /* 브라우저창 크기에 대해 유연하게 적용 */
+  /* font-size: 3vw */
+  /* clamp() 함수 */
+  font-size: clamp(1rem, 3vw, 2rem);
+
+}
+
+.bootcamp {
+  font-size: 2rem;
+}
+
+/* 줄높이 */
+.lion {
+  line-height: 1.5;
+}
+
+/* 글꼴 스타일 */
+em {
+  font-style: italic;
+}
+
+/* 크기가 작은 대문자 */
+.lion {
+  font-variant: small-caps;
+}
+
+/* font 단축 속성 */
+.school {
+  background-color: #fcf;
+  font: bold italic small-caps 20px/1.5 Georgia, serif;
+}
+
+/* 글자 그림자 */
+h1 {
+  text-shadow: 5px -5px 10px red;
+}
