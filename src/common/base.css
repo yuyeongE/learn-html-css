@@ -1,1 +1,14 @@
 /* 기본 스타일 */
+/* CSS 예제 본문 스타일 */
+.css {
+  margin: 20px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  h1 {
+    margin-block: 20px;
+  }
+}
