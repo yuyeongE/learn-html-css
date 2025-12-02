@@ -1,0 +1,27 @@
+/* 리스트 스타일 */
+/* list-style-type 속성 */
+.frontend ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* list-style-position 속성 */
+.frontend ol {
+  background-color: #ffc;
+  list-style-type: upper-roman;
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+/* list-sytle-image 속성 */
+.bootcamp ul {
+  list-style-image: url(/src/assets/thumbnail/new.png);
+}
+
+/* list-style- 속성 */
+.bootcamp ol {
+  padding: 0;
+  background-color: #cff;
+  list-style: square inside url(/src/assets/thumbnail/new.png);
+}
