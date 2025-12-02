@@ -1,0 +1,79 @@
+/* 박스 모델 */
+/* display 속성 */
+.frontend {
+  font-size: 0;
+}
+
+.frontend span {
+  background-color: #ffc;
+  display: block;
+}
+
+.frontend p {
+  background-color: #fcf;
+  display: inline;
+}
+
+.frontend div,
+.frontend p {
+  font-size: 16px;
+}
+
+/* border 속성 */
+.frontend {
+  /* border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px; */
+  /* border-width: 1px; */
+
+  /* border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid; */
+  /* border-style: solid; */
+
+  /* border-top-color: red;
+  border-right-color: red;
+  border-bottom-color: red;
+  border-left-color: red; */
+  /* border-color: red; */
+
+  border: 1px solid red;
+}
+
+/* padding 속성 */
+.frontend {
+  /* padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 40px; */
+  padding: 10px 20px 30px 40px;
+}
+
+/* margin 속성 */
+.frontend {
+  /* margin: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px; */
+  margin: 10px;
+}
+
+/* width, height 속성 */
+.bootcamp span:first-child {
+  width: 100px;
+  aspect-ratio: 2/1;
+}
+
+.bootcamp span:last-child {
+  width: 5em;
+  height: 5em;
+}
+
+.school {
+  background-color: #cff;
+  width: 200px;
+  height: 150px;
+  overflow: auto;
+}
