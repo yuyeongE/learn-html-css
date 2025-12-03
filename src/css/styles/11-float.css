@@ -1,0 +1,34 @@
+/* float 레이아웃 */
+/* float: left */
+/* float로 인해 발생한 레이아웃 이슈를 overflow 속성으로 해결 */
+.wrapper {
+  border: 5px solid red;
+  overflow: hidden;
+
+  img {
+    border: 2px solid blue;
+    float: left;
+    /* position: relative;
+    top: -20px; */
+  }
+
+  .like {
+    border: 2px solid green;
+  }
+
+}
+
+/* float: right */
+.container {
+  border: 5px solid green;
+  display: flow-root;
+
+  img {
+    border: 2px solid blue;
+    float: right;
+  }
+
+  .lion {
+    border: 2px solid red;
+  }
+}
