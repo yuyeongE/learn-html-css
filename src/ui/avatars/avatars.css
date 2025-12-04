@@ -1,12 +1,17 @@
 /* 아바타 컴포넌트 */
 .avatar {
   --avatar-size: 64px;
-  --state-size: 16px;
+  --state-size: 20px;
+  --disable-color: #dbdbdb;
+  --active-color: #4bfe88;
+  --border-color: #fff;
 
   width: var(--avatar-size);
   height: var(--avatar-size);
-  background: #ffc;
   position: relative;
+  border: 0;
+  padding: 0;
+  background: transparent;
 
   img {
     border-radius: 50%;
@@ -14,13 +19,41 @@
     height: 100%;
   }
 
+  /* .is-online {
+    background: var(--active-color) !important;
+  } */
+
   .avatar-state {
     width: calc(var(--state-size) / var(--avatar-size) * 100%);
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background: gray;
+    background: var(--disable-color);
     position: absolute;
-    left: 50px;
-    top: 50px;
+    right: 0;
+    bottom: 0;
+    border: 2px solid var(--border-color);
+    /* box-shadow: 0px 0px 0px 2px var(--border-color); */
+
+    &.is-online {
+      background: var(--active-color);
+    }
+  }
+}
+
+/* 아바타 레이아웃 */
+.avatar-list {
+  width: 596px;
+  height: 395px;
+  padding: 110px 130px;
+  box-shadow: 0 0 4px 1px currentColor;
+
+
+  .avatar-item {
+    float: left;
+    margin: 10px;
+
+    &:nth-child(5) {
+      clear: left;
+    }
   }
 }
