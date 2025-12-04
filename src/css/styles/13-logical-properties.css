@@ -1,0 +1,47 @@
+/* 논리속성과 논리값 */
+/* width , heigt */
+.like {
+  background: #ffc;
+  width: 200px;
+
+}
+
+/* margin, padding */
+.lion {
+  background: #ffc;
+  padding-block: 20px;
+  margin-inline: 20px;
+}
+
+/* position: absolute; top, right, bottom, left */
+.bootcamp {
+  background: #cff;
+  position: relative;
+  inline-size: 300px;
+  block-size: 100px;
+
+  strong {
+    position: absolute;
+    background: #fcf;
+    /* inset-inline-start: 0;
+    inset-inline-end: 0;
+    inset-block-start: 0;
+    inset-block-end: 0; */
+    inset: 0;
+  }
+}
+
+.frontend {
+  background: #cff;
+
+  strong {
+    background: yellowgreen;
+    float: inline-end;
+  }
+}
+
+.euid {
+  padding: 10px;
+  background: salmon;
+  border-inline-start: 2px solid blue;
+}
