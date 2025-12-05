@@ -1,0 +1,12 @@
+/* 테이블 스타일링 */
+.members-wrapper {
+
+  .members {
+    inline-size: 100%;
+    background: var(--yellow);
+  }
+
+  .number {
+    inline-size: 15%;
+  }
+}
