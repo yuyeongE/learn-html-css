@@ -1,12 +1,17 @@
 /* 기본 스타일 */
-/* CSS 예제 본문 스타일 */
-.css {
-  margin: 20px;
+body {
+  font-family: 'SUIT Variable', sans-serif;
+}
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+/* 링크(a 요소) 스타일 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 여백  */
+.spacing-20 {
+  margin: 20px;
 
   h1 {
     margin-block: 20px;
@@ -19,11 +24,6 @@
   border: 1px solid currentColor;
   margin-block: 10px;
   padding: 10px;
-}
-
-/* 기본 스타일 */
-body {
-  font-family: 'SUIT Variable', sans-serif;
 }
 
 /* copy component */
