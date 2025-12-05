@@ -1,0 +1,43 @@
+/* 유틸리티 바 */
+.utility-bar {
+  --spacing: 8px;
+
+  font-size: 0.875rem;
+  display: flow-root;
+  text-transform: uppercase;
+  padding: calc(var(--spacing) / 2);
+
+  li {
+    float: inline-start;
+    display: flow-root;
+  }
+
+  span,
+  a {
+    float: inline-start;
+    padding: calc(var(--spacing) / 2);
+  }
+}
+
+.utility-bar-before {
+  --spacing: 8px;
+
+  font-size: 0.875rem;
+  display: flow-root;
+  text-transform: uppercase;
+  padding: calc(var(--spacing) / 2);
+
+  li {
+    float: inline-start;
+  }
+
+  li:nth-child(n + 2)::before {
+    content: '|';
+  }
+
+  li:nth-child(n + 2)::before,
+  a {
+    float: inline-start;
+    padding: calc(var(--spacing) / 2);
+  }
+}
