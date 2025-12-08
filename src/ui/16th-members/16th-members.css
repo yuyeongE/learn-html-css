@@ -1,12 +1,50 @@
 /* 테이블 스타일링 */
 .members-wrapper {
+  block-size: 500px;
+  overflow: auto;
+}
 
-  .members {
-    inline-size: 100%;
-    background: var(--yellow);
-  }
+.members {
+  inline-size: 100%;
+  /* 테이블 왼쪽과 오른쪽에만 테두리 선을 지정 */
+  border-inline: 1px solid var(--black);
+  /* empty-cells: hide; */
 
   .number {
     inline-size: 15%;
+  }
+
+  .name {
+    inline-size: 25%;
+  }
+
+  .email {
+    inline-size: 30%;
+  }
+
+  .phone {
+    inline-size: 30%;
+  }
+
+  thead tr,
+  tfoot tr {
+    background: var(--black);
+    color: var(--white);
+  }
+
+  thead tr {
+    position: sticky;
+    top: 0;
+  }
+
+  tr:nth-child(even) {
+    background: var(--gray);
+  }
+
+  th,
+  td {
+    padding: 1em;
+    text-align: center;
+    white-space: nowrap;
   }
 }
