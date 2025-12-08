@@ -1,4 +1,4 @@
-/* 기본 스타일 */
+/* 기본 글꼴 */
 body {
   font-family: 'SUIT Variable', sans-serif;
 }
@@ -7,6 +7,12 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* 테이블 스타일 */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
 /* 여백  */
