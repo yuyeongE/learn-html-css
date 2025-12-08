@@ -1,0 +1,56 @@
+/* Stacking Context */
+/* isolation 속성 */
+/* Cafe W 예시 */
+.cafe-w {
+  border: 10px solid currentColor;
+  inline-size: 500px;
+  block-size: 200px;
+  position: relative;
+  background: var(--pink);
+  isolation: isolate;
+
+  .hero {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  .star {
+    background: #fff;
+    border-radius: 50%;
+  }
+
+  .text {
+    background: yellow;
+    padding: 1em;
+  }
+}
+
+/* z-index 속성 */
+.euid {
+  background: rgba(255, 255, 150, 0.5);
+  width: 500px;
+  height: 100px;
+  position: relative;
+
+  .like {
+    background: skyblue;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+  }
+
+  .lion {
+    background: orange;
+    position: relative;
+    z-index: 1;
+  }
+
+  .bootcamp {
+    background: pink;
+    position: relative;
+    top: -5px;
+    left: 10px;
+  }
+}
