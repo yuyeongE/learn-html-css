@@ -1,0 +1,106 @@
+/* Flex 레이아웃 */
+/* 영역 별 배경 색상 */
+div {
+  background: var(--yellow);
+
+  >div:nth-child(1) {
+    background: var(--pink);
+  }
+
+  >div:nth-child(2) {
+    background: var(--green);
+  }
+
+  >div:nth-child(3) {
+    background: var(--blue);
+  }
+
+  >div:nth-child(4) {
+    background: var(--orange);
+  }
+}
+
+/* Flex - flex-direction / order */
+.like {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: row;
+
+  div:nth-child(even) {
+    order: 1;
+  }
+}
+
+/* flex-wrap , flex-flow*/
+.lion {
+  display: flex;
+  /* flex-direction: row-reverse;
+  flex-wrap: wrap; */
+  flex-flow: wrap row;
+  padding: 0.5em;
+  inline-size: 600px;
+  block-size: 200px;
+  justify-content: space-evenly;
+
+  >div {
+    inline-size: 150px;
+  }
+}
+
+/* justify-content, align-items */
+.euid {
+  block-size: 200px;
+  padding: 0.5em;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+/* align-content */
+.frontend {
+  display: flex;
+  inline-size: 400px;
+  block-size: 200px;
+  flex-flow: wrap row;
+  justify-content: start;
+  align-content: space-evenly;
+
+  >div {
+    inline-size: 200px;
+  }
+}
+
+/* gap */
+.bootcamp {
+  inline-size: 400px;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: start;
+  align-items: stretch;
+  /* padding: 1em; */
+  column-gap: 40px;
+  block-size: 200px;
+
+  >div {
+    inline-size: 180px;
+  }
+
+  .bootcamp-item1 {
+    align-self: end;
+  }
+}
+
+/* flex, flex-grow, flex-srhink, flex-basis */
+.school {
+  display: flex;
+  flex-flow: nowrap row;
+  inline-size: 50%;
+
+  >div {
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0; */
+    flex: 1 1 0;
+  }
+}
