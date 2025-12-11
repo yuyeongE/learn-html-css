@@ -1,0 +1,89 @@
+/* Transition 애니메이션 */
+/* 레이아웃 */
+.container {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  .wrapper {
+    margin: 10px;
+
+    button {
+      margin-block-end: 10px;
+    }
+  }
+}
+
+/* Transition 관련 속성 */
+.like {
+  background: yellow;
+  padding: 10px;
+  font-weight: 100;
+  transition-property: background, font-weight, padding;
+  transition-duration: 1000ms, 2000ms, 2000ms;
+  transition-delay: 0ms, 1000ms, 3000ms;
+
+  &.active {
+    background: pink;
+    font-weight: 900;
+    padding: 50px;
+  }
+}
+
+/* Translate 속성 */
+.lion {
+  inline-size: 100px;
+  block-size: 100px;
+  background: pink;
+  text-align: center;
+  align-content: center;
+  transition: translate 1000ms 0ms;
+
+  &.active {
+    translate: 200px 0;
+  }
+}
+
+/* rotate 속성 */
+.euid {
+  inline-size: 100px;
+  block-size: 100px;
+  background: orange;
+  text-align: center;
+  align-content: center;
+  border-radius: 50%;
+  transition: all 1000ms 0ms;
+
+  &.active {
+    rotate: 10turn;
+  }
+}
+
+/* skew() 함수 */
+.bootcamp {
+  inline-size: 100px;
+  block-size: 100px;
+  background: aqua;
+  text-align: center;
+  align-content: center;
+  transition: all 1000ms 0ms;
+
+  &.active {
+    transform: skew(30deg, -15deg) translate(100px, 0);
+  }
+}
+
+/* scale() 함수 */
+.frontend {
+  inline-size: 100px;
+  block-size: 100px;
+  background: yellowgreen;
+  text-align: center;
+  align-content: center;
+  transition: all 1000ms 0ms;
+
+  &.active {
+    transform: scale(1.5);
+    transform-origin: 0 0;
+  }
+}
