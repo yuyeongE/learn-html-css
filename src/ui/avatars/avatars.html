@@ -1,109 +1,107 @@
 <!doctype html>
 <html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>아바타 UI</title>
+    <link rel="shortcut icon" href="/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon/likelion.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/font/suit/SUIT-Variable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <link rel="stylesheet" href="/src/ui/avatars/avatars.css" />
+    <script type="module" src="/src/js/copy-component.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>아바타 UI</title>
-  <link rel="shortcut icon" href="/favicon/likelion.ico" type="image/x-icon" />
-  <link rel="icon" href="/favicon/likelion.svg" type="image/svg" />
-  <link rel="preload" as="font" href="/font/suit/SUIT-Variable.woff2" />
-  <link rel="stylesheet" href="/font/suit/SUIT-Variable.css" />
-  <link rel="stylesheet" href="/src/common/index.css" />
-  <link rel="stylesheet" href="/src/ui/avatars/avatars.css" />
-  <script type="module" src="/src/ui/js/copy-component.js"></script>
-</head>
+  <body class="spacing-20">
+    <a href="/index.html">Index로 이동</a>
+    <h1>아바타 UI</h1>
+    <h2>아바타 레이아웃</h2>
+    <ul class="avatar-list">
+      <li class="avatar-item">
+        <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+          <img src="/src/assets/face/face1.webp" width="64" height="64" alt="송하늬" />
+          <span class="avatar-state is-online"></span>
+        </button>
+      </li>
+      <li class="avatar-item">
+        <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+          <img src="/src/assets/face/face2.webp" width="64" height="64" alt="백희연" />
+          <span class="avatar-state is-online"></span>
+        </button>
+      </li>
+      <li class="avatar-item">
+        <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+          <img src="/src/assets/face/face3.webp" width="64" height="64" alt="이찬미" />
+          <span class="avatar-state is-online"></span>
+        </button>
+      </li>
+      <li class="avatar-item">
+        <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+          <img src="/src/assets/face/face4.webp" width="64" height="64" alt="신솔비" />
+          <span class="avatar-state is-online"></span>
+        </button>
+      </li>
+      <li class="avatar-item">
+        <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+          <img src="/src/assets/face/face5.webp" width="64" height="64" alt="사민재" />
+          <span class="avatar-state is-online"></span>
+        </button>
+      </li>
+      <li class="avatar-item">
+        <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+          <img src="/src/assets/face/face6.webp" width="64" height="64" alt="이동헌" />
+          <span class="avatar-state is-online"></span>
+        </button>
+      </li>
+      <li class="avatar-item">
+        <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+          <img src="/src/assets/face/face7.webp" width="64" height="64" alt="이정론" />
+          <span class="avatar-state is-online"></span>
+        </button>
+      </li>
+      <li class="avatar-item">
+        <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+          <img src="/src/assets/face/face8.webp" width="64" height="64" alt="박성윤" />
+          <span class="avatar-state is-online"></span>
+        </button>
+      </li>
+    </ul>
 
-<body class="spacing-20">
-  <a href="/index.html">Index로 이동</a>
-  <h1>아바타 UI</h1>
-  <h2>아바타 레이아웃</h2>
-  <ul class="avatar-list">
-    <li class="avatar-item">
+    <hr />
+    <h2>아바타 컴포넌트</h2>
+    <h3>온라인 상태 - 버튼</h3>
+    <div class="ui-component">
       <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
-        <img src="/src/assets/face/face1.webp" width="64" height="64" alt="송하늬" />
+        <img src="/src/assets/face/face1.webp" width="64" height="64" alt="아바타 이름" />
         <span class="avatar-state is-online"></span>
       </button>
-    </li>
-    <li class="avatar-item">
-      <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
-        <img src="/src/assets/face/face2.webp" width="64" height="64" alt="백희연" />
-        <span class="avatar-state is-online"></span>
-      </button>
-    </li>
-    <li class="avatar-item">
-      <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
-        <img src="/src/assets/face/face3.webp" width="64" height="64" alt="이찬미" />
-        <span class="avatar-state is-online"></span>
-      </button>
-    </li>
-    <li class="avatar-item">
-      <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
-        <img src="/src/assets/face/face4.webp" width="64" height="64" alt="신솔비" />
-        <span class="avatar-state is-online"></span>
-      </button>
-    </li>
-    <li class="avatar-item">
-      <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
-        <img src="/src/assets/face/face5.webp" width="64" height="64" alt="사민재" />
-        <span class="avatar-state is-online"></span>
-      </button>
-    </li>
-    <li class="avatar-item">
-      <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
-        <img src="/src/assets/face/face6.webp" width="64" height="64" alt="이동헌" />
-        <span class="avatar-state is-online"></span>
-      </button>
-    </li>
-    <li class="avatar-item">
-      <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
-        <img src="/src/assets/face/face7.webp" width="64" height="64" alt="이정론" />
-        <span class="avatar-state is-online"></span>
-      </button>
-    </li>
-    <li class="avatar-item">
-      <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
-        <img src="/src/assets/face/face8.webp" width="64" height="64" alt="박성윤" />
-        <span class="avatar-state is-online"></span>
-      </button>
-    </li>
-  </ul>
-
-  <hr />
-  <h2>아바타 컴포넌트</h2>
-  <h3>온라인 상태 - 버튼</h3>
-  <div class="ui-component">
-    <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
-      <img src="/src/assets/face/face1.webp" width="64" height="64" alt="아바타 이름" />
-      <span class="avatar-state is-online"></span>
-    </button>
-    <button type="button" class="copy-component">복사</button>
-  </div>
-  <h3>오프라인 상태 - 버튼</h3>
-  <div class="ui-component">
-    <button type="button" class="avatar">
-      <img src="/src/assets/face/face1.webp" width="64" height="64" alt="아바타 이름" />
-      <span class="avatar-state"><span class="sr-only">오프라인</span></span>
-    </button>
-    <button type="button" class="copy-component">복사</button>
-  </div>
-  <hr />
-  <h3>온라인 상태</h3>
-  <div class="ui-component">
-    <div class="avatar">
-      <img src="/src/assets/face/face1.webp" width="64" height="64" alt="아바타 이름" />
-      <span class="avatar-state is-online"><span class="sr-only">온라인</span></span>
+      <button type="button" class="copy-component">복사</button>
     </div>
-    <button type="button" class="copy-component">복사</button>
-  </div>
-  <h3>오프라인 상태</h3>
-  <div class="ui-component">
-    <figure class="avatar">
-      <img src="/src/assets/face/face1.webp" width="64" height="64" alt="아바타 이름" />
-      <figcaption class="avatar-state"><span class="sr-only">오프라인</span></figcaption>
-    </figure>
-    <button type="button" class="copy-component">복사</button>
-  </div>
-</body>
-
+    <h3>오프라인 상태 - 버튼</h3>
+    <div class="ui-component">
+      <button type="button" class="avatar">
+        <img src="/src/assets/face/face1.webp" width="64" height="64" alt="아바타 이름" />
+        <span class="avatar-state"><span class="sr-only">오프라인</span></span>
+      </button>
+      <button type="button" class="copy-component">복사</button>
+    </div>
+    <hr />
+    <h3>온라인 상태</h3>
+    <div class="ui-component">
+      <div class="avatar">
+        <img src="/src/assets/face/face1.webp" width="64" height="64" alt="아바타 이름" />
+        <span class="avatar-state is-online"><span class="sr-only">온라인</span></span>
+      </div>
+      <button type="button" class="copy-component">복사</button>
+    </div>
+    <h3>오프라인 상태</h3>
+    <div class="ui-component">
+      <figure class="avatar">
+        <img src="/src/assets/face/face1.webp" width="64" height="64" alt="아바타 이름" />
+        <figcaption class="avatar-state"><span class="sr-only">오프라인</span></figcaption>
+      </figure>
+      <button type="button" class="copy-component">복사</button>
+    </div>
+  </body>
 </html>

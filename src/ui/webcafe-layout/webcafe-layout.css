@@ -1,0 +1,27 @@
+@import '/src/ui/news/news.css';
+
+/* body 최소 높이 */
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* 웹카페 레이아웃 */
+.container {
+  background: #ffc;
+  width: 1180px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 80px);
+  grid-template-rows: 120px 500px 120px;
+  column-gap: 20px;
+
+  .header,
+  .footer {
+    grid-column: span 12;
+  }
+  .main {
+    grid-column: 3 / -3;
+    background: pink;
+  }
+}
