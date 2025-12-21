@@ -9,12 +9,53 @@
     <link rel="preload" as="font" href="/font/suit/SUIT-Variable.woff2" />
     <link rel="stylesheet" href="/font/suit/SUIT-Variable.css" />
     <link rel="stylesheet" href="/src/common/index.css" />
-    <link rel="stylesheet" href="/src/ui/News/News.css" />
+    <link rel="stylesheet" href="/src/ui/news/news.css" />
     <script type="module" src="/src/js/copy-component.js"></script>
   </head>
   <body class="spacing-20">
     <a href="/index.html">Index로 이동</a>
-    <h1>이디야 News</h1>
+    <h1>이디야(Ediya)</h1>
+    <hr />
+    <section class="ediya-youtube">
+      <h2>고객 감사 영상</h2>
+      <figure class="youtube">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/UGPo0RqhbKU?si=SgujCGzFU7bdx8RI"
+          title="[이디야 커피]고객 감사 영상"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <figcaption class="sr-only">[이디야 커피]고객 감사 영상</figcaption>
+      </figure>
+    </section>
+    <hr />
+    <section class="notice">
+      <h2>Notice</h2>
+      <article>
+        <h3>이디야 뉴스가 새로워집니다.</h3>
+        <time datetime="2025-12-16T09:30:27">2025.12.16</time>
+        <p>이디야멤버스에 새로운 기능이 추가됩니다. 추가되는 고객등급제, 이디야카드, 스마트 ...</p>
+      </article>
+      <div>
+        <button type="button" aria-label="이전 공지사항 보기">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="0.5" width="15" height="15" stroke="#F5F5F5" />
+            <path d="M9.25 10.5L6.75 8L9.25 5.5" stroke="#F5F5F5" />
+          </svg>
+        </button>
+        <button type="button" aria-label="다음 공지사항 보기">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="-0.5" y="0.5" width="15" height="15" transform="matrix(-1 0 0 1 15 0)" stroke="#F5F5F5" />
+            <path d="M6.75 10.5L9.25 8L6.75 5.5" stroke="#F5F5F5" />
+          </svg>
+        </button>
+      </div>
+    </section>
+    <hr />
     <section class="news">
       <h2 class="news-title">NEWS</h2>
       <ul class="news-list">

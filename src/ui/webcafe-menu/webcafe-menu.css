@@ -1,0 +1,66 @@
+/* 웹카페 메뉴 */
+/* 컴포넌트 */
+.menu-item {
+  .menu-button {
+    border-radius: 4px;
+    border: 1px solid #000;
+    padding: 0.75em 1.5em;
+    font-weight: 700;
+    background: #e85e2c linear-gradient(to bottom, #ef9126 0%, #e85e2c 35%, #e85e2c 70%, #ef9126 100%);
+    color: #fff;
+    text-shadow:
+      1px 1px 0 #000,
+      -1px -1px 0 #000;
+    /* anchor-name: --menu-button; */
+  }
+
+  .sub-menu {
+    /* position-area: right; */
+    /* position: absolute; */
+    /* position-anchor: --menu-button; */
+    /* left: anchor(left);
+    top: calc(anchor(bottom) + 4px); */
+    inset: unset;
+    inset-inline-start: anchor(left);
+    inset-block-start: calc(anchor(bottom) + 4px);
+
+    &:popover-open {
+      display: flex;
+      flex-flow: nowrap row;
+      column-gap: 12px;
+      padding-left: 4px;
+      border: 0;
+
+      a {
+        display: block;
+        padding: 4px;
+
+        &:hover,
+        &:focus {
+          font-weight: 700;
+          color: #e85e2c;
+          text-decoration: underline;
+          text-underline-offset: 8px;
+          outline: 0;
+        }
+      }
+    }
+  }
+}
+
+/* 레이아웃 */
+.navigation {
+  box-shadow: 0 0 0 5px green;
+  padding-bottom: 45px;
+
+  .menu {
+    background: pink;
+    display: grid;
+    grid-template-columns: repeat(6, max-content);
+    column-gap: 16px;
+
+    .sub-menu:popover-open {
+      border: 1px solid red;
+    }
+  }
+}

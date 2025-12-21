@@ -1,0 +1,52 @@
+/* @layer 규칙 */
+@layer reset, base, lion, like;
+
+/* lion 스타일링*/
+@layer lion {
+  .bootcamp {
+    background: pink;
+
+    h2 {
+      color: red;
+    }
+  }
+}
+
+/* like 레이어 스타일링 */
+@layer like {
+  .bootcamp {
+    background: yellow;
+    padding: 10px;
+
+    h2 {
+      font-size: 1.125rem;
+    }
+
+    p {
+      padding-block: 10px;
+    }
+
+    a {
+      display: block;
+      background: var(--dark-blue);
+      border-radius: 20px;
+      padding: 10px;
+    }
+  }
+}
+
+/* 이름이 없는 레이어 스타일 */
+@layer {
+  .bootcamp {
+    background: lime;
+
+    p {
+      margin-block: 10px;
+    }
+  }
+}
+
+/* @레이어 규칙을 사용하지 않은 스타일 */
+.bootcamp {
+  background: silver;
+}
